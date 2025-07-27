@@ -1,0 +1,49 @@
+{
+  "name": "debugger-snapshots",
+  "version": "0.1.0",
+  "description": "Capture snapshots of your application's state by using debugger statements",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "build": "tsdown"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "import": "./dist/vite.js"
+    }
+  },
+  "keywords": [
+    "debugger",
+    "snapshots",
+    "vite"
+  ],
+  "author": "Zeb Piasecki <zeb@zebulon.dev>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__parser": "^7.1.5",
+    "@types/babel__traverse": "^7.20.7",
+    "@types/node": "^24.1.0",
+    "tsdown": "^0.13.0",
+    "typescript": "5.9.1-rc",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.28.0",
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.2"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ]
+}
